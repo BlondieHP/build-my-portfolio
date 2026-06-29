@@ -23,6 +23,7 @@ disable-model-invocation: false
 ├── MISSION.md          # 学习使命：为什么学、成功标准
 ├── RESOURCES.md        # 收敛后的核心资源（5-10 个）
 ├── ROADMAP.md          # 有序学习路线图（3-5 个里程碑）
+├── NOTES.md            # 实时笔记：AI 自动捕获的关键收获
 ├── JOURNAL.md          # 学习日志：每次 session 的收获
 ├── PORTFOLIO.md        # 作品集索引
 └── projects/
@@ -106,6 +107,7 @@ AI：  → 确认/创建 MISSION → Phase 2 CONVERGE（只做资源筛选）
 - [RESOURCES-FORMAT.md](formats/RESOURCES-FORMAT.md)
 - [ROADMAP-FORMAT.md](formats/ROADMAP-FORMAT.md)
 - [SPEC-FORMAT.md](formats/SPEC-FORMAT.md)
+- [NOTES-FORMAT.md](formats/NOTES-FORMAT.md) — 实时笔记自动捕获规范
 - [PORTFOLIO-FORMAT.md](formats/PORTFOLIO-FORMAT.md)
 
 ## Scripts
