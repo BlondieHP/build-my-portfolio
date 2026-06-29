@@ -44,9 +44,12 @@
 ### Step 6: 写出 SPEC.md
 按 [SPEC-FORMAT.md](../formats/SPEC-FORMAT.md) 格式写入 `.project-learning/projects/<project-slug>/SPEC.md`。
 
-### Step 7: 脚手架（可选）
-如果用户需要，运行 `scripts/scaffold-project.js` 生成项目骨架。
-或者直接让用户自己创建——看用户偏好。
+### Step 7: 脚手架
+**何时运行**：用户是程序员、项目是代码项目、技术栈在 scaffold 支持范围内（rust / react-ts / python / node-ts / go / vanilla-ts）→ 默认运行 `node scripts/scaffold-project.js <slug> --tech <stack>` 生成项目骨架。
+
+**何时跳过**：用户明确说想自己建、或非代码项目（设计/产品/写作）、或技术栈不在支持列表中。
+
+运行后告知用户生成的文件结构，让用户检查是否满意。
 
 ### Step 8: 交接
 > 项目规约已经生成：[SPEC.md](.project-learning/projects/<slug>/SPEC.md)

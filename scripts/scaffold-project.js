@@ -11,7 +11,7 @@
  *   node scaffold-project.js my-python-api --tech python
  *
  * 支持的技术栈：
- *   rust, react-ts, python, node-ts, vanilla-ts
+ *   rust, react-ts, python, node-ts, go, vanilla-ts
  *
  * 生成的目录结构根据技术栈不同而变化，详见各模板。
  */
@@ -308,6 +308,54 @@ dist/
   );
 }
 
+function scaffoldGo() {
+  const dirs = ["cmd", "internal"];
+  dirs.forEach((d) => fs.mkdirSync(path.join(learningDir, d), { recursive: true }));
+
+  const modulePath = `github.com/user/${slug}`;
+  fs.writeFileSync(
+    path.join(learningDir, "go.mod"),
+    `module ${modulePath}
+
+go 1.23
+`
+  );
+
+  fs.writeFileSync(
+    path.join(learningDir, "cmd", "main.go"),
+    `package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello from ${slug}!")
+	// TODO: Implement your project here.
+	// See SPEC.md for requirements.
+}
+`
+  );
+
+  fs.writeFileSync(
+    path.join(learningDir, "internal", ".gitkeep"),
+    ""
+  );
+
+  fs.writeFileSync(
+    path.join(learningDir, ".gitignore"),
+    `# Binaries
+/${slug}
+/${slug}.exe
+*.exe
+
+# Test binary
+*.test
+
+# Output of go coverage
+*.out
+`
+  );
+}
+
 function scaffoldVanillaTs() {
   const dirs = ["src"];
   dirs.forEach((d) => fs.mkdirSync(path.join(learningDir, d), { recursive: true }));
@@ -378,6 +426,7 @@ const templates = {
   "react-ts": scaffoldReactTs,
   python: scaffoldPython,
   "node-ts": scaffoldNodeTs,
+  go: scaffoldGo,
   "vanilla-ts": scaffoldVanillaTs,
 };
 
