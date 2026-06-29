@@ -1,7 +1,7 @@
 ---
 name: build-my-portfolio
 description: >
-  AI 辅助的项目式学习系统。将模糊的学习意向转化为可展示的作品集——通过六阶段流程：定向讨论 → 资源收敛筛选 → 学习路线编排 → 项目规约设计 → 边学边做构建 → 反思记录。核心理念是"收藏不等于学会"：在资源过载时代帮助用户收敛到最小必要路径，通过做实际项目内化知识，形成 GitHub 风格的作品集。Use when user wants to learn something new, start a learning journey, build a project portfolio, figure out what to learn next, turn knowledge into projects, or mentions 学习/项目/作品集/学习路线/资源推荐/方法论/learn/project/portfolio.
+  AI 辅助的项目式学习系统。将模糊的学习意向转化为可展示的作品集——通过六阶段流程：定向讨论 → 资源收敛筛选 → 学习路线编排 → 项目规约设计 → 边学边做构建 → 反思记录。核心理念是"收藏不等于学会"：在资源过载时代帮助用户收敛到最小必要路径，通过做实际项目内化知识，形成 GitHub 风格的作品集。Use when user wants to learn something new, start a learning journey, build a project portfolio, figure out what to learn next, turn knowledge into projects, or mentions 学习/项目/作品集/学习路线/资源推荐/方法论/魔改/fork/开源/learn/project/portfolio.
 argument-hint: "[学习方向] — 例如：想学 Rust 写 CLI 工具 / 继续上次的学习 / 看看我的作品集"
 disable-model-invocation: false
 ---
@@ -52,7 +52,11 @@ disable-model-invocation: false
 
 ### 只需项目设计
 用户说"帮我设计一个练习项目"、"我想做一个 demo 练习 X"
-→ 先确认前置阶段状态，跳到 [Phase 4: 项目规约](phases/SPEC.md)
+→ 先确认前置阶段状态，跳到 [Phase 4: 项目规约](phases/SPEC.md)（含建造/魔改模式选择）
+
+### 魔改模式
+用户说"我想魔改一个项目"、"找一个开源项目来学"、"fork 一个项目改着玩"
+→ 跳到 [Phase 5B: 魔改](phases/REMIX.md)（如果 SPEC 已存在）或先进入 SPEC 选择模式
 
 ### 继续构建
 用户说"继续写代码"、"继续做项目"、"开始 BUILD"
@@ -102,7 +106,8 @@ AI：  → 确认/创建 MISSION → Phase 2 CONVERGE（只做资源筛选）
 - [Phase 2: 收敛 CONVERGE](phases/CONVERGE.md) — 从海量资源筛选 5-10 个核心，产出 RESOURCES.md
 - [Phase 3: 路线图 ROADMAP](phases/ROADMAP.md) — 编排有序学习路径，产出 ROADMAP.md
 - [Phase 4: 项目规约 SPEC](phases/SPEC.md) — 知识映射为具体项目，产出 SPEC.md
-- [Phase 5: 构建 BUILD](phases/BUILD.md) — 边学边做，苏格拉底式引导
+- [Phase 5: 构建 BUILD](phases/BUILD.md) — 边学边做，苏格拉底式引导（建造模式）
+- [Phase 5B: 魔改 REMIX](phases/REMIX.md) — 读真实代码 + 动手改（魔改模式）
 - [Phase 6: 反思 REFLECT](phases/REFLECT.md) — 内化知识，更新作品集
 
 ## Format 引用

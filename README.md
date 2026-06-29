@@ -131,6 +131,14 @@ build-my-portfolio/
 
 ---
 
+## 灵感来源
+
+- **[codojo（代码道场）](https://github.com/ttguy0707/codojo)** — "看懂已有项目 → 独立魔改"的学习思路启发了 REMIX 模式
+- **[cc-self-train](https://github.com/zainnab-sparq/cc-self-train)** — Claude Code 项目式学习课程，启发了角色演进和逐步放手的引导策略
+- **[AI Tutor](https://github.com/SamuelSchlesinger/ai-tutor)** — 自适应学习框架，启发了知识自评和学习风格适配
+
+---
+
 ## 许可
 
 MIT © 2026 BlondieHP

@@ -11,3 +11,4 @@
 - SKILL.md 新增"查看笔记"路由
 - SPEC 阶段明确 scaffold 调用/跳过时机
 - scaffold-project.js 新增 Go 语言支持（共 6 种技术栈）
+- 新增 REMIX 魔改模式 — 阅读真实项目 → 动手改，灵感来自 [codojo（代码道场）](https://github.com/ttguy0707/codojo)
