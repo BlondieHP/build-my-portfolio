@@ -107,8 +107,14 @@ AI：  → 确认/创建 MISSION → Phase 2 CONVERGE（只做资源筛选）
 - [Phase 3: 路线图 ROADMAP](phases/ROADMAP.md) — 编排有序学习路径，产出 ROADMAP.md
 - [Phase 4: 项目规约 SPEC](phases/SPEC.md) — 知识映射为具体项目，产出 SPEC.md
 - [Phase 5: 构建 BUILD](phases/BUILD.md) — 边学边做，苏格拉底式引导（建造模式）
+- [Phase 5: 构建 BUILD](phases/BUILD.md) — 边学边做，苏格拉底式引导（建造模式）
 - [Phase 5B: 魔改 REMIX](phases/REMIX.md) — 读真实代码 + 动手改（魔改模式）
+- [跨阶段: 测验 QUIZ](phases/QUIZ.md) — 里程碑边界自动触发，验证学习效果
 - [Phase 6: 反思 REFLECT](phases/REFLECT.md) — 内化知识，更新作品集
+
+## 共享规范
+
+- [输出风格指南](_shared/output-style-guide.md) — 统一的图标、确认词、输出密度规范
 
 ## Format 引用
 
