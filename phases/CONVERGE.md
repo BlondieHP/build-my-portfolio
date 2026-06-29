@@ -9,15 +9,18 @@
 ## 流程
 
 ### Step 1: 全网搜索
-基于 MISSION.md 的学习方向，使用 WebSearch 多渠道搜索：
+基于 MISSION.md 的学习方向，**使用 `agent-reach` skill** 进行多渠道搜索。
 
-**搜索策略**：
-- 用中英文各搜一次：`"best resources to learn X 2024 2025"`
-- 按资源类型搜：`"X tutorial"`, `"X official documentation"`, `"X project-based course"`
-- 搜索社区推荐：`"X reddit best way to learn"`, `"X v2ex 推荐"`
-- 搜索学习路线：`"X roadmap"`, `"X learning path"`
+> ⚠️ 必须使用 `agent-reach` skill，而非直接调用 WebSearch。`agent-reach` 覆盖 15 个平台（搜索引擎、GitHub、Reddit、V2EX、B站、小红书等），能搜到更全面、更高质量的学习资源。
 
-**收集阶段不做筛选**：先把 15-20 个候选资源列出来。
+**搜索策略**（按顺序逐轮搜索）：
+1. **全网搜索**：`"best resources to learn X 2025 2026"`（英文）+ `"X 学习资源 推荐 2025"`（中文）
+2. **社区口碑**：`"X Reddit best tutorial"` + `"X V2EX 推荐"`
+3. **开发社区**：`"X GitHub awesome list"`（GitHub code search）
+4. **视频资源**：`"X 入门教程"`（B站/YouTube，如果用户偏好视频学习）
+5. **补充搜索**：如果候选资源不足 10 个，再按资源类型补搜（`"X official docs"`, `"X project-based course"`）
+
+**收集阶段不做筛选**：先把 15-20 个候选资源列出来。每轮搜索后记录结果 URL 和来源。
 
 ### Step 2: 评估与排序
 对每个候选资源按以下维度打分：
@@ -58,7 +61,8 @@
 > 准备好了就说"继续"。
 
 ## 注意事项
-- **搜索用 WebSearch 工具，不要依赖 parametric knowledge**：你的训练数据可能过时
+- **搜索必须用 `agent-reach` skill，不直接用 WebSearch**：agent-reach 覆盖多平台（GitHub/Reddit/V2EX/B站等），搜索深度远超单一搜索引擎
+- **不要依赖 AI 的训练数据**：参数知识可能过时，必须实际搜索获取最新资源
 - **解释过滤原因**：用户可能收藏过某些"网红资源"，不解释清楚为什么过滤会失去信任
 - **尊重用户的选择**：如果用户想加回某个资源，加回去。这是他的学习旅程
 - **如果没有好资源**：某些小众领域可能确实资源稀缺，诚实告知，转为"一起探索"模式
