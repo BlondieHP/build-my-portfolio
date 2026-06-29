@@ -6,6 +6,12 @@
 - `.project-learning/MISSION.md` 已存在且内容清晰
 - 如果 MISSION.md 不存在，先跳回 [DIRECT.md](DIRECT.md)
 
+## ⚠️ 强制规则
+
+> **禁止使用 WebSearch。必须使用 `agent-reach` skill 进行所有搜索。**
+>
+> 开始搜索前，先确认你能访问 agent-reach。如果 agent-reach 不可用，告知用户而非回退到 WebSearch。
+
 ## 流程
 
 ### Step 1: 全网搜索
