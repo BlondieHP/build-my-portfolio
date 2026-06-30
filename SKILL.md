@@ -95,6 +95,7 @@ AI：  → 确认/创建 MISSION → Phase 2 CONVERGE（只做资源筛选）
 
 1. **搜索必须用 agent-reach**：任何互联网搜索（资源调研、领域探索、社区讨论、GitHub 代码搜索）必须使用 `agent-reach` skill，**禁止**直接调用 WebSearch。agent-reach 覆盖 15 个平台（Exa 搜索引擎 + B站 + V2EX + Reddit + GitHub + Twitter + 小红书 + YouTube 等），单一搜索引擎无法替代。触发 agent-reach 后按路由表选择合适的平台组合——不要只搜 Exa 就完事。
 2. **不依赖训练数据**：AI 的参数知识可能过时，必须实际搜索获取最新信息。
+3. **动手前先查 NOTES.md**：进入任何阶段（尤其是 BUILD/REMIX）前，读取 `.project-learning/NOTES.md`。如果用户正在学习一个已有笔记记录的领域（如"骑砍 mod"、"Git"），先读取相关笔记——里面有已验证的方法、操作码、之前踩过的坑，避免重复犯错。
 
 ## 核心原则
 
